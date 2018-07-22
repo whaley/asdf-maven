@@ -9,19 +9,19 @@ After installing [asdf](https://github.com/asdf-vm/asdf),
 you can add this plugin like this:
 
 ```bash
-asdf plugin-add maven https://github.com/skotchpine/asdf-maven
+asdf plugin-add maven
 ```
 
 and install new versions like this:
 
 ```bash
-asdf install maven 3.5.0
+asdf install maven 3.5.4
 ```
 
 and switch versions like this:
 
 ```bash
-asdf global maven 3.5.0
+asdf global maven 3.5.4
 ```
 
 ## Reading
