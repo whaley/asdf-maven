@@ -9,8 +9,5 @@ get_maven_versions() {
     [[ $line =~ $version ]] && echo ${BASH_REMATCH[2]}
   done
 }
-if [[ "$(uname)" == "Darwin" ]]; then
-	get_maven_versions | rev | tr "\n" " "
-else
-	get_maven_versions | tac | tr "\n" " "
-fi
+
+get_maven_versions | sort | tr "\n" " "
