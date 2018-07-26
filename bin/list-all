@@ -10,4 +10,4 @@ get_maven_versions() {
   done
 }
 
-get_maven_versions | sort
+get_maven_versions | sort | tr "\n" " "
